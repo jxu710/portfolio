@@ -1,0 +1,6 @@
+@mixin buttonStyles($width: 225px) {
+  width: $width;
+  height: $primaryHeaderSize;
+  background-color: salmon;
+  border: 2px inset palegoldenrod;
+}
