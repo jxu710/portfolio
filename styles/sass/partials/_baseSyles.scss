@@ -1,0 +1,39 @@
+html{
+    scroll-behavior: smooth;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.wrapper {
+    max-width: 1260px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+section {
+    margin: 0;
+}
+
+ul,
+li,
+a,
+input {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+button{
+    padding: 12px 40px;
+    border: none;
+    color: $iconColor;
+    background-color: $buttonColor;
+    cursor: pointer;
+    font-family: $bodyFont;
+    font-weight: 600;
+    letter-spacing: 1px;
+}

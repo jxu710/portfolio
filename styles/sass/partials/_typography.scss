@@ -1,0 +1,33 @@
+html {
+    font-size: 125%;
+}
+
+body {
+    p {
+        color: $iconColor;
+        font-family: $bodyFont;
+        font-weight: normal;
+        line-height: 20px;
+        letter-spacing: 1px;
+    }
+}
+
+h1 {
+    font-family: $headingFont;
+    color: $aboutColor;
+    font-size: 4rem;
+    text-align: center;
+    margin-top: 150px;
+    letter-spacing: 5px;
+}
+
+h2{
+    font-family: $headingFont;
+    text-align: center;
+    font-size: 3rem;
+}
+
+h3{
+    font-family: $bodyFont;
+    font-size: 1.5rem;
+}

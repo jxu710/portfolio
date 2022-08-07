@@ -1,22 +1,10 @@
 @import './partials/setup';
 @import './partials/variables';
 @import './partials/mixins';
+@import './partials/typography';
+@import './partials/baseSyles';
 @import './partials/header';
+@import './partials/mainSectionStyles';
+@import './partials/footerStyle';
 
 
-
-body {
-  background-color: $primaryBGColour;
-}
-
-button {
-  @include buttonStyles(); 
-}
-
-.put-bear-here {
-  border: 1px solid red;
-  width: 200px;
-  height: 300px;
-  margin: 0 auto;
-  background-image: url(../images/300.jpg);
-}

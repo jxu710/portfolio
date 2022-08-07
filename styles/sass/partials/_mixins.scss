@@ -1,6 +1,11 @@
-@mixin buttonStyles($width: 225px) {
-  width: $width;
-  height: $primaryHeaderSize;
-  background-color: salmon;
-  border: 2px inset palegoldenrod;
+@mixin anchorStyles($padding:12px 40px) {
+  padding: $padding;
+  border: none;
+  color: $iconColor;
+  background-color: $buttonColor;
+  cursor: pointer;
+  font-family: $bodyFont;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
+

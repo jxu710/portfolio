@@ -1,0 +1,172 @@
+// aboutme section style
+.aboutMe{
+    text-align: center;
+    height: 30vh;
+    margin-bottom: 50px;
+    h2{
+        color: $contactColor;
+        margin-top: 80px;
+        margin-bottom: 10px;
+    }
+    P{
+        margin-top: 0;
+        max-width: 50%;
+        position: relative;
+        left: 25%;
+        line-height: 28px;
+    }
+}
+
+// skill section style
+
+.skills{
+    padding-top: 30px;
+    padding-bottom: 80px;
+    background: $skillColor;
+    h2{
+        color: $iconColor;
+    }
+    ul{
+        text-align: center;
+        display: flex;
+        justify-content: space-around;
+        i{
+            font-size: 4rem;
+        }
+    }
+}
+
+// projects section
+
+.projects{
+    background: $aboutColor;
+    .wrapper{
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    h2{
+        margin: 0;
+        padding-top: 80px;
+        padding-bottom: 60px;
+        color: $iconColor;
+    }
+}
+
+.projectFlex1, .projectFlex2{
+    width: 70%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+   
+    p{
+        line-height: 30px;
+    }
+    p:nth-of-type(1){
+        color: $headerColor;
+    }
+    img{
+        width: 100%;
+    }
+    h3{
+        margin: 0;
+        color: $iconColor;
+    }
+
+    .projectContent1, .projectContent2{
+        ul {
+            display: flex;
+            flex-wrap: wrap;
+            li{
+                margin-right: 10px;
+            }
+    
+            a{
+                @include anchorStyles();
+            }
+
+        }
+    }
+
+    .projectContent1{
+        margin-left: 40px;
+    }
+
+    .projectContent2{
+        text-align: right;
+        margin-right: 40px;
+        li{
+        position: relative;
+        left: 25%;
+        }
+    }
+
+}
+
+.projectFlex1{
+    padding: 0 20px 60px 20px;
+    border-bottom: 2px solid #fff;
+}
+
+
+// get in touch section style
+
+.contact{
+    .wrapper{
+        width: 50%;
+        max-width: 600px;
+    }
+    background: $contactColor;
+    h2{
+        margin: 0;
+        color: $aboutColor;
+        padding-top: 80px;
+    }
+
+    ul{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        li{
+            margin-right: 15px;
+            i{
+                color: $buttonColor;
+                font-size: 1.3rem;
+            }
+        }
+    }
+
+    p{
+        color: $aboutColor;
+        line-height: 30px;
+        text-align: center;
+    }
+
+    label{
+        color: $aboutColor;
+        text-transform: uppercase;
+        font-family: $bodyFont;
+       
+    }
+    input,textarea{
+        width: 100%;
+    }
+
+    input{
+        padding: 10px;
+        margin-bottom: 15px;
+    }
+
+    button{
+        position: relative ;
+        left: 35%;
+        margin-top: 20px;
+        margin-bottom: 80px;
+    }
+
+}
+
+
+

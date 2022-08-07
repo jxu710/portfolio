@@ -1,13 +1,30 @@
-header {
-  background-color: crimson;
-
-  h1 {
-    font-size: $primaryHeaderSize;
-  }
-
-  ul {
-    li:nth-child(2) {
-      background-color: blue;
+header{
+    height: 80vh;
+    background:$headerColor;
+    text-align: center;
+    p{
+        color: $aboutColor;
+        font-size: 1.2rem;
+        margin: -30px 0 50px 0;
+        + a{
+            @include anchorStyles()
+        }
     }
-  }
 }
+
+
+nav ul{
+    font-family: $bodyFont;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    li{
+        margin: 20px;
+        a{
+            color: $aboutColor;
+        }
+    }
+    
+}
+
+
