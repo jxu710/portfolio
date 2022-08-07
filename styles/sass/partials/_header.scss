@@ -22,9 +22,17 @@ nav ul{
         margin: 20px;
         a{
             color: $aboutColor;
+            padding: 10px 15px;
+            transition: all 300ms linear;
+            border-radius: 30px;
+            &:hover {
+                background-color: $buttonColor;
+                color: $headerColor;
+            }
+    
         }
     }
+
     
 }
-
 
