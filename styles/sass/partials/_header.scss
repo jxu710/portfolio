@@ -7,7 +7,7 @@ header{
         font-size: 1.2rem;
         margin: -30px 0 50px 0;
         + a{
-            @include anchorStyles()
+            @include anchorStyles();
         }
     }
 }
