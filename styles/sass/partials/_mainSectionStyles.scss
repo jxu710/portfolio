@@ -55,6 +55,7 @@
 .projectFlex1{
     display: flex;
     justify-content: center;
+    border-bottom: #fff solid 3px;
     .imgContainer{
         width: 40%;
     }
@@ -79,6 +80,7 @@
         ul{
             display: flex;
             margin-top: 25px;
+            padding-bottom: 20px;
             li{
                 margin-right: 10px;
                 a{
@@ -93,6 +95,7 @@
     display: flex;
     justify-content: center;
     text-align: right;
+    padding-bottom: 60px;
 
     .imgContainer {
         width: 40%;
@@ -162,6 +165,9 @@
             i{
                 color: $buttonColor;
                 font-size: 1.3rem;
+                &:hover{
+                    animation: jump 800ms infinite;
+                }
             }
         }
     }
@@ -198,6 +204,21 @@
         }
     }
 
+}
+
+// get in touch icon animation 
+@keyframes jump {
+    0%{
+        transform: translateY(0);
+    }
+
+    50%{
+        transform: translateY(-8px);
+    }
+
+    100%{
+        transform: translateY(0);
+    }
 }
 
 
