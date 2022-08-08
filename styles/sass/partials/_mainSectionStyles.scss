@@ -9,6 +9,7 @@
         margin-bottom: 10px;
     }
     P{
+        z-index: 0;
         margin-top: 0;
         max-width: 50%;
         position: relative;
@@ -201,8 +202,7 @@
         transition: scale 200ms linear;
         &:hover{
             scale: (1.3);
-        }
-    }
+        }    }
 
 }
 
