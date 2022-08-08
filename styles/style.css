@@ -779,6 +779,9 @@ nav ul li a:hover {
   padding: 10px;
   margin-bottom: 15px;
 }
+.contact textarea {
+  padding-left: 10px;
+}
 .contact button {
   position: relative;
   left: 35%;
