@@ -1030,7 +1030,7 @@ footer p {
     position: fixed;
     top: 0;
     right: -500px;
-    z-index: 1;
+    z-index: 2;
     -webkit-transition: right 500ms ease;
     transition: right 500ms ease;
   }
