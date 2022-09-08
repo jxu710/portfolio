@@ -1,11 +1,15 @@
-@mixin anchorStyles($padding:12px 40px) {
+@mixin anchorStyles($padding: 12px 40px) {
   padding: $padding;
   border: none;
-  color: $iconColor;
+  color: $aboutColor;
   background-color: $buttonColor;
   cursor: pointer;
   font-family: $bodyFont;
   font-weight: 600;
   letter-spacing: 1px;
-}
+  transition: transform 200ms linear;
 
+  &:hover {
+    transform: scale(1.3);
+  }
+}

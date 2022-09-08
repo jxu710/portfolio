@@ -1,4 +1,4 @@
-html{
+html {
     scroll-behavior: smooth;
 }
 
@@ -27,13 +27,18 @@ input {
     list-style: none;
 }
 
-button{
+button {
     padding: 12px 40px;
     border: none;
-    color: $iconColor;
+    color: $aboutColor;
     background-color: $buttonColor;
     cursor: pointer;
     font-family: $bodyFont;
     font-weight: 600;
     letter-spacing: 1px;
+}
+
+a {
+    display: inline-block;
+    border-radius: 20px;
 }

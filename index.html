@@ -16,7 +16,7 @@
         rel="stylesheet">
 
     <link rel="stylesheet" href="./styles/style.css">
-
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header>
@@ -48,8 +48,8 @@
 
             </nav>
             
-            <h1>jingru xu</h1>
-            <p> Front-end web developer</p>
+            <h1 data-aos="fade-right">jingru xu</h1>
+            <p data-aos="fade-left"> Front-end web developer</p>
             <a href="#contact">get in touch</a>
         </div> 
         <!-- end.wrapper -->
@@ -60,7 +60,7 @@
         <section class="aboutMe" id="aboutMe">
             <div class="wrapper">
                 <h2>about me</h2>
-                <p>Hi! I am a dynamic junior front-end developer with passion in maintaining and building user-friendly and
+                <p>Hi! I am a dynamic front-end developer with passion in maintaining and building user-friendly and
                 accessible websites.</p>
             </div>
             <!-- end.wrapper -->
@@ -68,9 +68,9 @@
 
         <!-- SKILLS SECTION -->
         <section class="skills">
-            <div class="wrapper">
+            <div class="wrapper" data-aos="fade-left">
 
-                <h2>skills</h2>
+                <h2 data-aos="slide-right">skills</h2>
                 <ul>
                     <li>
                         <i class="devicon-html5-plain"></i>
@@ -102,6 +102,7 @@
                         <p>FIREBASE</p>
                     </li>
                 </ul>
+                
             </div>
             <!-- end.wrapper -->
         </section>
@@ -111,8 +112,8 @@
         <section class="projects" id="projects">
             <div class="wrapper">
 
-                <h2>projects</h2>
-                <div class="projectFlex1">
+                <h2  data-aos="fade-down">projects</h2>
+                <div class="projectFlex1"  data-aos="slide-left">
                     <div class="imgContainer">
                         <img src="./images/animeFinderProject.png" alt="screenshot of my animeFinder Project">
                     </div>
@@ -133,7 +134,7 @@
                     
                 </div>
                                 
-                <div class="projectFlex2">
+                <div class="projectFlex2" data-aos="slide-right">
                     <div class="projectContent2">
                         <h3>Captured</h3>
                         <p>HTML,CSS,SCSS</p>
@@ -162,7 +163,7 @@
 
         <section class="contact" id="contact">
             <div class="wrapper">
-                <h2>get in touch</h2>
+                <h2 data-aos="fade-down-right">get in touch</h2>
                 <ul>
                     <li>
                         <a href="">
@@ -181,9 +182,9 @@
                     </li>
                 </ul>
     
-                <p>Let's contact</p>
+                <p data-aos="fade-left">Let's contact</p>
     
-                <form action="">
+                <form action="" data-aos="fade-up">
                     <label for="name">name</label>
                     <input type="text" name="name" id="name" placeholder="Your Name">
     
@@ -206,6 +207,11 @@
     <footer>
         <p>Built in 2022 by Jingru Xu ❤️</p>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
     <script src="script.js"></script>
+
 </body>
 </html>
