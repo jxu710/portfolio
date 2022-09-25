@@ -488,6 +488,7 @@ h3 {
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -1119,10 +1120,11 @@ footer p {
     opacity: 0.95;
     position: fixed;
     top: 0;
-    right: -500px;
+    right: -100%;
     z-index: 2;
     -webkit-transition: right 500ms ease;
     transition: right 500ms ease;
+    overflow: hidden;
   }
   .navbar .navList {
     -webkit-box-orient: vertical;
