@@ -207,10 +207,33 @@
 
     }
 
-    .skills ul {
-        p {
-            font-size: 0.6rem;
+    .skills {
+        h2::after {
+            content: 'Scroll for more \27A0';
+            width: 100%;
+            height: 30px;
+            font-size: 1.5rem;
+            display: block;
+            margin-top: 100px;
+
         }
+
+        ul {
+            margin-top: 0;
+            overflow-x: scroll;
+            width: 100%;
+            padding: 20px;
+            padding-left: 160px;
+            margin: 0;
+            white-space: nowrap;
+
+            p {
+                font-size: 0.6rem;
+                margin-inline: 10px;
+            }
+        }
+
+
     }
 
     .projectContent2 {
