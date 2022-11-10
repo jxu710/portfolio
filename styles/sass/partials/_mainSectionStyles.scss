@@ -265,3 +265,36 @@
         transform: translateY(0);
     }
 }
+
+
+
+
+.container {
+    overflow: hidden;
+}
+
+.skills ul {
+    display: flex;
+    justify-content: flex-start;
+    width: max-content;
+    animation: slideLeft 3s linear alternate infinite;
+
+    &:hover {
+        animation-play-state: paused;
+    }
+}
+
+li {
+    float: left;
+    padding-right: 20px;
+}
+
+@keyframes slideLeft {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(40%);
+    }
+}

@@ -886,6 +886,54 @@ nav ul li a:hover {
             transform: translateY(0);
   }
 }
+.container {
+  overflow: hidden;
+}
+
+.skills ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-animation: slideLeft 3s linear alternate infinite;
+          animation: slideLeft 3s linear alternate infinite;
+}
+.skills ul:hover {
+  -webkit-animation-play-state: paused;
+          animation-play-state: paused;
+}
+
+li {
+  float: left;
+  padding-right: 20px;
+}
+
+@-webkit-keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(40%);
+            transform: translateX(40%);
+  }
+}
+
+@keyframes slideLeft {
+  0% {
+    -webkit-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+  100% {
+    -webkit-transform: translateX(40%);
+            transform: translateX(40%);
+  }
+}
 footer {
   background: #ede0d4;
   text-align: center;
@@ -900,8 +948,11 @@ footer p {
   .aboutMe {
     margin-bottom: 120px;
   }
+  header::after {
+    display: none;
+  }
   .skills::before {
-    bottom: -38%;
+    display: none;
   }
 }
 @media (max-width: 1000px) {
@@ -910,12 +961,6 @@ footer p {
   }
   header h1 {
     margin-top: 10%;
-  }
-  header::after {
-    display: none;
-  }
-  .skills::before {
-    display: none;
   }
   .projectFlex1 {
     padding-bottom: 10px;
@@ -956,6 +1001,16 @@ footer p {
   .contact button {
     margin-bottom: 50px;
     left: 33%;
+  }
+  .skills ul {
+    -webkit-animation: none;
+            animation: none;
+    margin-top: 0;
+    overflow-x: scroll;
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    white-space: nowrap;
   }
 }
 @media (max-width: 700px) {
@@ -1077,16 +1132,7 @@ footer p {
     display: block;
     margin-top: 100px;
   }
-  .skills ul {
-    margin-top: 0;
-    overflow-x: scroll;
-    width: 100%;
-    padding: 20px;
-    padding-left: 160px;
-    margin: 0;
-    white-space: nowrap;
-  }
-  .skills ul p {
+  .skills p {
     font-size: 0.6rem;
     margin-inline: 10px;
   }

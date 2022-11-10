@@ -5,9 +5,15 @@
         margin-bottom: 120px;
     }
 
-    .skills::before {
-        bottom: -38%;
+    header::after {
+        display: none;
     }
+
+    .skills::before {
+        display: none;
+    }
+
+
 }
 
 
@@ -20,14 +26,6 @@
         h1 {
             margin-top: 10%;
         }
-
-        &::after {
-            display: none;
-        }
-    }
-
-    .skills::before {
-        display: none;
     }
 
     .projectFlex1 {
@@ -75,6 +73,19 @@
         margin-bottom: 50px;
         left: 33%;
     }
+
+
+    .skills ul {
+        animation: none;
+        margin-top: 0;
+        overflow-x: scroll;
+        width: 100%;
+        padding: 20px;
+        margin: 0;
+        white-space: nowrap;
+
+    }
+
 
 }
 
@@ -218,20 +229,12 @@
 
         }
 
-        ul {
-            margin-top: 0;
-            overflow-x: scroll;
-            width: 100%;
-            padding: 20px;
-            padding-left: 160px;
-            margin: 0;
-            white-space: nowrap;
 
-            p {
-                font-size: 0.6rem;
-                margin-inline: 10px;
-            }
+        p {
+            font-size: 0.6rem;
+            margin-inline: 10px;
         }
+
 
 
     }
