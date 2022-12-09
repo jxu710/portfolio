@@ -273,11 +273,13 @@
     overflow: hidden;
 }
 
+// skill animation
+
 .skills ul {
     display: flex;
     justify-content: flex-start;
     width: max-content;
-    animation: slideLeft 3s linear alternate infinite;
+    animation: slideLeft 7s linear infinite;
 
     &:hover {
         animation-play-state: paused;
@@ -291,10 +293,10 @@ li {
 
 @keyframes slideLeft {
     0% {
-        transform: translateX(0%);
+        transform: translateX(100%);
     }
 
     100% {
-        transform: translateX(40%);
+        transform: translateX(-100%);
     }
 }

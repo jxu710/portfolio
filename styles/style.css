@@ -900,8 +900,8 @@ nav ul li a:hover {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  -webkit-animation: slideLeft 3s linear alternate infinite;
-          animation: slideLeft 3s linear alternate infinite;
+  -webkit-animation: slideLeft 7s linear infinite;
+          animation: slideLeft 7s linear infinite;
 }
 .skills ul:hover {
   -webkit-animation-play-state: paused;
@@ -915,23 +915,23 @@ li {
 
 @-webkit-keyframes slideLeft {
   0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   100% {
-    -webkit-transform: translateX(40%);
-            transform: translateX(40%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 
 @keyframes slideLeft {
   0% {
-    -webkit-transform: translateX(0%);
-            transform: translateX(0%);
+    -webkit-transform: translateX(100%);
+            transform: translateX(100%);
   }
   100% {
-    -webkit-transform: translateX(40%);
-            transform: translateX(40%);
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
   }
 }
 footer {
